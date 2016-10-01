@@ -1,0 +1,43 @@
+package.xml|556|<packageDescription id="3w3ehxtf" name="DJFairyUI_Test">
+  <resources>
+    <atlas id="atlas0" size="1024,128" file="atlas0.png"/>
+    <component id="wfbb6" name="SiwchButton" size="271,89"/>
+    <component id="wfbb8" name="Window_Main" exported="true" size="400,400"/>
+    <image id="fqtz1" name="Return_icon" size="180,82"/>
+    <image id="fqtz2" name="Button_Red_Up" size="271,89"/>
+    <image id="fqtz3" name="Button_Orange_Up" size="271,89"/>
+    <image id="fqtz5" name="Button_Grey" size="289,89" exported="true"/>
+  </resources>
+</packageDescription>wfbb6.xml|1351|<component size="271,89" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="fqtz3" xy="0,0">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2" name="n2" src="fqtz2" xy="0,0">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3" name="n3" src="fqtz2" xy="0,0">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n4" name="n4" src="fqtz2" xy="0,0">
+      <gearDisplay controller="button" pages="3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n5" name="title" xy="0,0" size="271,89" fontSize="32" color="#cccccc" align="center" vAlign="middle" letterSpacing="2" autoSize="none" strokeColor="#000000" singleLine="true" text="切换我">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n6" name="icon" xy="0,0" size="271,89" align="center" vAlign="middle">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button/>
+</component>wfbb8.xml|261|<component size="400,400">
+  <displayList>
+    <component id="n1" name="n1" src="wfbb6" xy="72,311"/>
+    <loader id="n2" name="n2" xy="109,12" size="180,82" url="ui://3w3ehxtffqtz1" align="center" vAlign="middle" autoSize="true"/>
+  </displayList>
+</component>

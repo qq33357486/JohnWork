@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<metas version="5" language="cs">
+  <types>
+    <enumtype Type="behaviac::EBTStatus" DisplayName="" Desc="">
+      <enum NativeValue="behaviac::BT_INVALID" Value="BT_INVALID" DisplayName="BT_INVALID" Desc="BT_INVALID" />
+      <enum NativeValue="behaviac::BT_SUCCESS" Value="BT_SUCCESS" DisplayName="BT_SUCCESS" Desc="BT_SUCCESS" />
+      <enum NativeValue="behaviac::BT_FAILURE" Value="BT_FAILURE" DisplayName="BT_FAILURE" Desc="BT_FAILURE" />
+      <enum NativeValue="behaviac::BT_RUNNING" Value="BT_RUNNING" DisplayName="BT_RUNNING" Desc="BT_RUNNING" />
+    </enumtype>
+    <struct Type="System::Object" DisplayName="Object" Desc="Object" IsRefType="true" />
+  </types>
+  <agents>
+    <agent classfullname="DJTest" base="behaviac::Agent" DisplayName="DJTest" Desc="DJTest" IsRefType="true">
+      <Member Name="hp" DisplayName="" Desc="" Type="int" Class="DJTest" Public="true" />
+      <Member Name="isDead" DisplayName="" Desc="" Type="bool" Class="DJTest" Public="true" />
+      <Method Name="ChangeHp" DisplayName="" Desc="" ReturnType="void" Class="DJTest" Public="true">
+        <Param DisplayName="_hp" Desc="_hp" Type="int" />
+      </Method>
+      <Method Name="ReBorn" DisplayName="" Desc="" ReturnType="void" Class="DJTest" Public="true" />
+      <Method Name="ExecuteLua" DisplayName="" Desc="" ReturnType="void" Class="DJTest" Public="true">
+        <Param DisplayName="_className" Desc="_className" Type="string" />
+        <Param DisplayName="_methodName" Desc="_methodName" Type="string" />
+      </Method>
+    </agent>
+  </agents>
+  <instances>
+    <instance name="DJTest" class="DJTest" DisplayName="DJTest" Desc="DJTest" />
+  </instances>
+</metas>

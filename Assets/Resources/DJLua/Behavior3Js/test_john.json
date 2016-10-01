@@ -1,0 +1,132 @@
+{
+    "title": "A Behavior Tree",
+    "description": "",
+    "root": "cf45c05a-f227-4058-8606-f7e45355422d",
+    "display": {
+        "camera_x": 618,
+        "camera_y": 499.5,
+        "camera_z": 1,
+        "x": 48,
+        "y": 0
+    },
+    "properties": {},
+    "nodes": {
+        "cf45c05a-f227-4058-8606-f7e45355422d": {
+            "id": "cf45c05a-f227-4058-8606-f7e45355422d",
+            "name": "Sequence",
+            "title": "Sequence",
+            "description": "",
+            "display": {
+                "x": 208,
+                "y": 0
+            },
+            "parameters": {},
+            "properties": {},
+            "children": [
+                "2b990fae-c694-451d-94e6-8ea385368939",
+                "f4477a3d-54e2-499b-b7e8-2663a68cbe48"
+            ]
+        },
+        "2b990fae-c694-451d-94e6-8ea385368939": {
+            "id": "2b990fae-c694-451d-94e6-8ea385368939",
+            "name": "Wait",
+            "title": "Wait",
+            "description": "",
+            "display": {
+                "x": 432,
+                "y": -128
+            },
+            "parameters": {
+                "milliseconds": 1
+            },
+            "properties": {}
+        },
+        "f4477a3d-54e2-499b-b7e8-2663a68cbe48": {
+            "id": "f4477a3d-54e2-499b-b7e8-2663a68cbe48",
+            "name": "Priority",
+            "title": "Priority",
+            "description": "",
+            "display": {
+                "x": 400,
+                "y": 32
+            },
+            "parameters": {},
+            "properties": {},
+            "children": [
+                "b2eafc7e-bc96-49c5-83a4-800f7bc09f0c",
+                "5e8ee872-3d0b-4a97-8a3e-7f817f8b7194"
+            ]
+        },
+        "b2eafc7e-bc96-49c5-83a4-800f7bc09f0c": {
+            "id": "b2eafc7e-bc96-49c5-83a4-800f7bc09f0c",
+            "name": "Sequence",
+            "title": "Sequence",
+            "description": "",
+            "display": {
+                "x": 544,
+                "y": 64
+            },
+            "parameters": {},
+            "properties": {},
+            "children": [
+                "85051aed-f593-4502-87c0-17f3b8769e46",
+                "6cdaa1a5-043e-42f2-8d4a-a27e85496c35"
+            ]
+        },
+        "85051aed-f593-4502-87c0-17f3b8769e46": {
+            "id": "85051aed-f593-4502-87c0-17f3b8769e46",
+            "name": "Condition_IsDead",
+            "title": " 是否死亡",
+            "description": "",
+            "display": {
+                "x": 720,
+                "y": 64
+            },
+            "parameters": {},
+            "properties": {}
+        },
+        "6cdaa1a5-043e-42f2-8d4a-a27e85496c35": {
+            "id": "6cdaa1a5-043e-42f2-8d4a-a27e85496c35",
+            "name": "Action_Reborn",
+            "title": "复活",
+            "description": "",
+            "display": {
+                "x": 720,
+                "y": 144
+            },
+            "parameters": {},
+            "properties": {}
+        },
+        "5e8ee872-3d0b-4a97-8a3e-7f817f8b7194": {
+            "id": "5e8ee872-3d0b-4a97-8a3e-7f817f8b7194",
+            "name": "Action_ChangeHp",
+            "title": "掉血",
+            "description": "",
+            "display": {
+                "x": 704,
+                "y": 256
+            },
+            "parameters": {
+                "hp": 10
+            },
+            "properties": {}
+        }
+    },
+    "custom_nodes": [
+        {
+            "name": "Action_ChangeHp",
+            "title": "掉血",
+            "category": "action"
+        },
+        {
+            "name": "Action_Reborn",
+            "title": "复活",
+            "category": "action"
+        },
+        {
+            "name": "Condition_IsDead",
+            "title": " 是否死亡",
+            "category": "condition"
+        }
+    ]
+}
